@@ -20,11 +20,11 @@ provider:
       - 'subnet-0de3a4af95c484547'
       - 'subnet-07fd77bc39218cc9a'
   environment:
-    PG_HOST: rds-instance.cbzlpvqyx1m8.eu-west-3.rds.amazonaws.com
-    PG_PORT: 5432
-    PG_DATABASE: rds
-    PG_USERNAME: postgres
-    PG_PASSWORD: 12#$qwER
+    PG_HOST: ${env:PG_HOST}
+    PG_PORT: ${env:PG_PORT}
+    PG_DATABASE: ${env:PG_DATABASE}
+    PG_USERNAME: ${env:PG_USERNAME}
+    PG_PASSWORD: ${env:PG_PASSWORD}
 
 functions:
   main:
